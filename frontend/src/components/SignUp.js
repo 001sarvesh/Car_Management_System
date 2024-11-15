@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
 
-const API_URL = 'http://localhost:5000'; // Ensure this is your backend API URL
+const API_URL = 'https://car-management-system-5cxv.onrender.com'; // Ensure this is your backend API URL
 
 const Signup = () => {
   const [formData, setFormData] = useState({

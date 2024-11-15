@@ -29,10 +29,10 @@ const Edit = () => {
     'Nissan', 'MG Motor', 'Fiat', 'Chevrolet', 'Mercedes-Benz',
     'BMW', 'Audi', 'Jaguar', 'Land Rover', 'Jeep', 'Volvo','Others'
   ];
-  const API_URL="http://localhost:5000"
+  const API_URL="https://car-management-system-5cxv.onrender.com"
   const { id } = useParams();
   const navigate = useNavigate();
-  const cloudinary = new Cloudinary({ cloud_name: 'da7b5ocgm' });
+  const cloudinary = new Cloudinary({ cloud_name: 'dpzozeg4v' });
 
   useEffect(() => {
     const fetchCarDetails = async () => {
@@ -85,7 +85,7 @@ const Edit = () => {
       return new Promise((resolve, reject) => {
         const formData = new FormData();
         formData.append('file', file);
-        formData.append('upload_preset', 'chq8nchb'); // Ensure you set an upload preset in your Cloudinary settings
+        formData.append('upload_preset', 'uploads'); // Ensure you set an upload preset in your Cloudinary settings
   
         fetch(`https://api.cloudinary.com/v1_1/${cloudinary.config().cloud_name}/image/upload`, {
           method: 'POST',

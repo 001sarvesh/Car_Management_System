@@ -5,7 +5,7 @@ import { Modal, Button, Badge } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import Edit from './Edit';
 
-const API_URL = 'http://localhost:5000';
+const API_URL = 'https://car-management-system-5cxv.onrender.com';
 
 export default function CarDisplay() {
   const [keyword, setKeyword] = useState('');

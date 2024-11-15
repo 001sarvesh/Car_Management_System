@@ -38,7 +38,7 @@ export default function CarUpload() {
       }
   },[])
 
-  const cloudinary = new Cloudinary({ cloud_name: 'da7b5ocgm' });
+  const cloudinary = new Cloudinary({ cloud_name: 'dpzozeg4v' });
 
   
 
@@ -63,7 +63,7 @@ export default function CarUpload() {
       return new Promise((resolve, reject) => {
         const formData = new FormData();
         formData.append('file', file);
-        formData.append('upload_preset', 'chq8nchb'); // Ensure you set an upload preset in your Cloudinary settings
+        formData.append('upload_preset', 'uploads'); // Ensure you set an upload preset in your Cloudinary settings
   
         fetch(`https://api.cloudinary.com/v1_1/${cloudinary.config().cloud_name}/image/upload`, {
           method: 'POST',
@@ -109,7 +109,7 @@ export default function CarUpload() {
   
     try {
       // Fetch user info from the backend using the auth token
-      const userResponse = await axios.get('http://localhost:5000/api/auth/getuser', {
+      const userResponse = await axios.get('https://car-management-system-5cxv.onrender.com/api/auth/getuser', {
         headers: {
           'auth-token': localStorage.getItem('authToken'),  // Include auth token in header
         },
@@ -130,7 +130,7 @@ export default function CarUpload() {
       };
   
       // Send car data to the backend
-      const response = await axios.post('http://localhost:5000/api/car/createCar', carData, {
+      const response = await axios.post('https://car-management-system-5cxv.onrender.com/api/car/createCar', carData, {
         headers: {
           'Content-Type': 'application/json',
           'auth-token': localStorage.getItem('authToken'), // Include auth token in headers
