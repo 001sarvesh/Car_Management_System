@@ -1,9 +1,8 @@
+
 # Supporting Document for Car Management System
 
 **Repository Link:** [GitHub](https://github.com/001sarvesh/Car_Management_System)  
-**Live Demo:** [Car Management System Live](https://car-management-system-frontend.onrender.com/
-
-)  <!-- Replace '#' with your actual live demo link -->
+**Live Demo:** [Car Management System Live](https://car-management-system-frontend.onrender.com/)
 
 ## Project Summary
 A web app designed for car inventory and transaction management, enhancing efficiency for dealerships or rental services through streamlined processes.
@@ -12,8 +11,8 @@ A web app designed for car inventory and transaction management, enhancing effic
 - **User Authentication**
 - **Car Inventory Management**
 - **Search and Filters**
-- **View,Edit,Delete feature for Car**
-- **Add upto 10 Cars Image**
+- **View, Edit, Delete feature for Car**
+- **Add up to 10 Car Images**
 - **Responsive Design**
 
 ## Tech Stack
