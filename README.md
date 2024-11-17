@@ -16,10 +16,10 @@ A web app designed for car inventory and transaction management, enhancing effic
 - **Responsive Design**
 
 ## Tech Stack
-- **Front-End:** ReactJS, TailwindCSS
+- **Front-End:** ReactJS, BootstrapCSS
 - **Back-End:** Node.js, Express.js
 - **Database:** MongoDB
-- **State Management:** Redux Toolkit
+
 
 ## Architecture
 Follows an MVC pattern to separate concerns: MongoDB for models, React for views, and Express.js for controllers.
