@@ -21,9 +21,6 @@ A web app designed for car inventory and transaction management, enhancing effic
 - **Database:** MongoDB
 
 
-## Architecture
-Follows an MVC pattern to separate concerns: MongoDB for models, React for views, and Express.js for controllers.
-
 ## Challenges Solved
 - Ensured data consistency with validations.
 - Centralized state management via Redux Toolkit.
